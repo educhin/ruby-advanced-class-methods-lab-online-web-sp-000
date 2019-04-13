@@ -10,4 +10,13 @@ class Song
     self.class.all << self
   end
 
+  def self.create(name, artist_name)
+    @name = name
+    @artist_name = artist_name
+
+    song = self.class.New(name, artist_name)
+
+    @@all << song
+  end
+
 end
