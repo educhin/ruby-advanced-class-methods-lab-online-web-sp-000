@@ -17,6 +17,8 @@ class Song
     song = self.class.New(name, artist_name)
 
     @@all << song
+
+    song
   end
 
 end
