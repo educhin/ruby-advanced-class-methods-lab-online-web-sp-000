@@ -14,11 +14,7 @@ class Song
     @name = name
     @artist_name = artist_name
 
-    song = self.class.New(name, artist_name)
-
-    @@all << song
-
-    song
+    self.save
   end
 
 end
